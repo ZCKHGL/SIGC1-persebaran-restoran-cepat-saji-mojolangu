@@ -558,17 +558,124 @@
         }
         
         @media (max-width: 768px) {
+            header {
+                padding: 8px 0;
+            }
+            
+            .header-container {
+                padding: 0 12px;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .logo {
+                font-size: 14px;
+                gap: 8px;
+                flex: 1;
+                min-width: 0;
+            }
+            
+            .logo-images img {
+                height: 28px;
+            }
+            
+            .logo span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
             .header-nav {
-                gap: 15px;
+                gap: 8px;
+                flex-shrink: 0;
             }
             
             .header-nav a {
+                font-size: 11px;
+                white-space: nowrap;
+            }
+            
+            .header-lang-toggle {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+            
+            .header-theme-toggle {
+                width: 28px;
+                height: 28px;
+            }
+            
+            .header-theme-toggle i {
                 font-size: 12px;
             }
             
             .footer-content {
                 flex-direction: column;
                 gap: 10px;
+            }
+            
+            .footer-logos img {
+                height: 35px;
+            }
+            
+            #map {
+                margin-top: 45px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                padding: 6px 0;
+            }
+            
+            .header-container {
+                padding: 0 8px;
+            }
+            
+            .logo {
+                font-size: 12px;
+                gap: 6px;
+            }
+            
+            .logo-images img {
+                height: 24px;
+            }
+            
+            .header-nav a {
+                display: none;
+            }
+            
+            .header-nav {
+                gap: 6px;
+            }
+            
+            .header-lang-toggle {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+            
+            .header-theme-toggle {
+                width: 26px;
+                height: 26px;
+            }
+            
+            .footer-content p {
+                font-size: 10px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+            
+            .footer-logos img {
+                height: 30px;
+            }
+            
+            #map {
+                margin-top: 40px;
             }
         }
         </style>
